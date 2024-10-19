@@ -10,6 +10,10 @@ const router = createBrowserRouter([
     element : <Navbar />,
     children : [
       {
+        path : "/",
+        element : <h1>Accueil</h1>
+      },
+      {
         path : "skills",
         element : <h1>competences</h1>
       },
