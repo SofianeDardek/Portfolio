@@ -6,6 +6,7 @@ body {
 
 header {
     background-color: black;
+    display: flex;
 }
 
 header a {
