@@ -4,13 +4,18 @@ function Navbar(){
     return <>
     <header>
             <nav>
-                <Link to="/">Acceuil</Link>
-                <Link to="/skills">Compétences</Link>
-                <Link to="/projects">Projets</Link>
-                <Link to="/contact">Contact</Link>
+                <ul>
+                    <li><Link to="/">Acceuil</Link></li>
+                    <li><Link to="/skills">Compétences</Link></li>
+                    <li><Link to="/projects">Projets</Link></li>
+                    <li><a href="#">Mon CV</a></li>
+                </ul>
             </nav>
+                <Link to="/contact" className="button-contact">Contact</Link>
     </header>
-            <Outlet />
+            <div className="outlet-container">
+                <Outlet />
+            </div>
 
     </>
 }
