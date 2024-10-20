@@ -2,6 +2,9 @@ body {
     background-color: #1E1E1E;
 }
 
+li {
+    list-style: none;
+}
 /* NavBar */
 
 header {
@@ -12,4 +15,8 @@ header {
 header a {
     text-decoration: none;
     color: white;
+}
+
+header nav ul {
+    display: flex;
 }
