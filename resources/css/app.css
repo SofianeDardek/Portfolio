@@ -71,3 +71,25 @@ hr {
     border: none;
     background-color: #4CAF0D;
 }
+
+/* Popup Contact */
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-contact {
+    background-color: #2C2C2C;
+    margin-top: 55px;
+    padding: 15px
+}
+
+form .name-group {
+    display: flex;
+    justify-content: space-between;
+}
+form .name-group div {
+    display: flex;
+    flex-direction: column;
+}
