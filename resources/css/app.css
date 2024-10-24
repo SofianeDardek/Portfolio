@@ -59,11 +59,6 @@ header nav ul {
     color: white;
 }
 
-.content-home {
-    display: flex;
-    flex-direction: column;
-    color: white;
-}
 
 hr {
     height: 2px;
@@ -71,8 +66,33 @@ hr {
     border: none;
     background-color: #4CAF0D;
 }
+/* Home */
 
-/* Popup Contact */
+.content-home {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.content-home img {
+    border-radius: 50%;
+    border: #4CAF0D solid 3px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0% 10%;
+    flex-shrink: 0;
+    
+}
+
+.img-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*  Contact */
 
 .form-contact {
     display: flex;
@@ -82,14 +102,70 @@ hr {
 .box-contact {
     background-color: #2C2C2C;
     margin-top: 55px;
-    padding: 15px
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-form .name-group {
-    display: flex;
-    justify-content: space-between;
+.box-contact h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
 }
-form .name-group div {
-    display: flex;
-    flex-direction: column;
+
+.form-contact label {
+    margin-bottom: 5px;
+    color: white;
+}
+
+.form-contact input[type=text],
+.form-contact input[type=email],
+.form-contact textarea {
+    background-color: #333333;
+    border: 1px solid #4CAF0D;
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.form-contact textarea {
+    min-height: 150px;
+}
+
+.form-contact input::placeholder,
+.form-contact textarea::placeholder {
+    color: #888;
+}
+
+.button-submit {
+    background-color: #4CAF0D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button-submit:hover {
+    background-color: #45A105;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .box-contact {
+        padding: 15px;
+    }
+
+    .button-submit {
+        padding: 12px;
+    }
 }
