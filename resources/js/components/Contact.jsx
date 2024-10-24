@@ -3,23 +3,17 @@ function Contact(){
     <div className="box-contact">
         <h1>Contact</h1>
         <form className="form-contact">
-            <div className="name-group">
-                <div>
-                    <label htmlFor="firstName">Nom :</label>
-                    <input name="firstName" type="text" />
-                </div>
-                
-                <div>
-                    <label htmlFor="name">Prenom :</label>
-                    <input type="text" name="name" />
-                </div>
-            </div>
+            <label htmlFor="firstName">Nom :</label>
+            <input name="firstName" type="text" />
+            
 
             <label htmlFor="email">Email :</label>
             <input type="text" name="email" />
 
             <label htmlFor="message">Message :</label>
             <textarea name="message" id=""></textarea>
+
+            <button type="submit" className="button-submit">Envoyer</button>
         </form>
     </div>
     </>
