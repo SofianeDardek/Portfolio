@@ -55,8 +55,12 @@ header nav ul {
 /* Titre de page */
 
 .title-page {
-    text-transform: uppercase;
-    color: white;
+    text-transform: uppercase;   
+    font-size: 2.8em;      
+    margin-top: 40px;      
+    margin-bottom: 40px;   
+    color: #4CAF0D;        
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -74,7 +78,7 @@ hr {
     color: white;
 }
 
-.content-home img {
+.content-home #img-profile {
     border-radius: 50%;
     border: #4CAF0D solid 3px;
     width: 200px;
@@ -87,11 +91,47 @@ hr {
 
 .img-content {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Ajout pour meilleure responsivité */
 }
 
+.title-text-container {
+    max-width: 600px;
+    text-align: left; /* Alignement à gauche pour écrans larges */
+}
 
+.title-text-container h1 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 20px;
+}
 
+.title-text-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #CCCCCC; /* Amélioration du contraste pour la lisibilité */
+    margin-bottom: 15px;
+}
+
+.social-links {
+    margin-top: 20px; 
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    filter: invert(44%) sepia(78%) saturate(523%) hue-rotate(71deg) brightness(89%) contrast(92%);
+}
+
+.flex-imgProfile-socials {
+    display: flex;
+    flex-direction: column;
+}
 /*  Contact */
 
 .form-contact {
@@ -167,5 +207,15 @@ hr {
 
     .button-submit {
         padding: 12px;
+    }
+
+        .img-content {
+        flex-direction: column; /* Colonne pour écrans étroits */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .title-text-container {
+        text-align: center; /* Centrer le texte sur les petits écrans */
     }
 }
