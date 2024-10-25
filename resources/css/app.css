@@ -132,6 +132,31 @@ hr {
     display: flex;
     flex-direction: column;
 }
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    background-color: #2C2C2C;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(30% - 20px); /* Ajustement pour avoir plusieurs colonnes */
+}
+
+.skill h2 {
+    color: #4CAF0D; /* Couleur pour les titres des compétences */
+    margin-bottom: 5px;
+}
+
+.skill p {
+    color: white;
+}
+
 /*  Contact */
 
 .form-contact {
@@ -199,7 +224,7 @@ hr {
     background-color: #45A105;
 }
 
-/* Responsiveness */
+/* Responsive */
 @media (max-width: 768px) {
     .box-contact {
         padding: 15px;
@@ -217,5 +242,15 @@ hr {
 
     .title-text-container {
         text-align: center; /* Centrer le texte sur les petits écrans */
+    }
+
+    .skill {
+        flex: 1 1 calc(100% - 20px); /* 1 colonne sur petits écrans */
+    }
+}
+
+@media (max-width: 1024px) {
+    .skill {
+        flex: 1 1 calc(45% - 20px); /* 2 colonnes sur tablettes */
     }
 }
