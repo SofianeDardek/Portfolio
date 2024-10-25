@@ -1,8 +1,11 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './app.jsx'
-import Navbar from './components/Navbar';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './app.jsx';
 import { createBrowserRouter, Outlet, RouterProvider, } from "react-router-dom";
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Contact from './components/Contact';
+import Skills from './components/Skills';
 
 const router = createBrowserRouter([
   {
@@ -11,11 +14,11 @@ const router = createBrowserRouter([
     children : [
       {
         path : "/",
-        element : <h1>Accueil</h1>
+        element : <Home />
       },
       {
         path : "skills",
-        element : <h1>competences</h1>
+        element : <Skills />
       },
       {
         path : "projects",
@@ -23,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path : "contact",
-        element : <h1>contact</h1>
+        element : <Contact />
       }      
     ]
   }
