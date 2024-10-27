@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Skills from './components/Skills';
+import Projects from './components/Projects.jsx';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
       },
       {
         path : "projects",
-        element : <h1>projets</h1>
+        element : <Projects />
       },
       {
         path : "contact",
