@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
+import Footer from "./Footer";
 
 function Navbar(){
     return <>
@@ -16,6 +17,7 @@ function Navbar(){
             <div className="outlet-container">
                 <Outlet />
             </div>
+    <Footer />
 
     </>
 }
