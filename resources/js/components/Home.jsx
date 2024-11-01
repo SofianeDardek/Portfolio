@@ -23,8 +23,6 @@ function Home(){
                 </p>
             </div>
         </div>
-        <hr />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum unde corporis aliquam, exercitationem natus dolores modi, culpa, expedita reiciendis tempore cum quae ipsam! Enim, molestiae sit rem accusantium illo odio.</p>
     </div>
     </>
 }
