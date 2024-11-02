@@ -6,7 +6,7 @@ function Navbar(){
     <header>
             <nav>
                 <ul>
-                    <li><Link to="/">Acceuil</Link></li>
+                    <li><Link to="/">Accueil</Link></li>
                     <li><Link to="/skills">Compétences</Link></li>
                     <li><Link to="/projects">Projets</Link></li>
                     <li><a href="#">Mon CV</a></li>
