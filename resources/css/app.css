@@ -8,6 +8,22 @@ body {
 li {
     list-style: none;
 }
+
+/* Footer */
+ .footer-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 0.9em;
+    margin-top : 25px;
+ }
+
+ .footer-site p {
+    margin: 0;
+ }
 /* NavBar */
 
 header {
