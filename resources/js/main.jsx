@@ -6,7 +6,8 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Skills from './components/Skills';
-import Projects from './components/Projects.jsx';
+import Projects from './components/Projects';
+import ProjectDetails from './components/ProjectDetails';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path : "projects",
         element : <Projects />
+      },
+      {
+        path : "projects/:id",
+        element : <ProjectDetails />
       },
       {
         path : "contact",
