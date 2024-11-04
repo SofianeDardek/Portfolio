@@ -8,18 +8,21 @@ function ProjectDetails(){
 // Plus tard, elles seront enregistrées en base de données pour plus de modularité.
     const projectsData = [
         {
-            title : "projet 1",
+            title : "Projet restaurant",
+            desc: "Ce projet de site web pour un restaurant a été conçu et développé dans le cadre de ma formation de développeur junior au CNAM.",
             img : "/images/projects/oburo/oburo_index.png",
             video : "/video/oburo/demo_oburo.mp4"
         },
         {
-            title : "projet 2",
+            title : "Projet Portfolio",
+            desc: "Mon projet de portfolio m'a permis de m'exercer avec la bibliothèque React. Ce projet est important car il me représente et met en valeur mes compétences techniques et créatives. En développant ce portfolio, j'ai pu approfondir davantage mes connaissances.",
             img : "/images/projects/portfolio/portfolio_index.png",
             video : ""
         },
         {
-            title : "Projet 3",
-            img : "/images/projects/oburo/oburo_index.png",
+            title : "Site pour centre social",
+            desc : "Ce site web a été créé lors de mon stage de fin de première année de BTS pour un centre social, en utilisant WordPress et en respectant le cahier des charges. Cette expérience m'a permis d'apprendre WordPress et m'a appris le travail en équipe.",
+            img : "/images/projects/school/cs-laruche.png",
             video : ""
         }
     ]
@@ -35,7 +38,7 @@ function ProjectDetails(){
                 <div className="images-container">
                         <img  src={project.img} className="project-image-detail"/>
                 </div>
-                <p>desc</p>
+                <p>{project.desc}</p>
             </div>
             {/* On affiche une vidéo si il y'en a une */}
             {project.video && project.video.trim() !== "" && (
