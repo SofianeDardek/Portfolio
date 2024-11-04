@@ -1,14 +1,15 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, NavLink } from "react-router-dom";
 import Footer from "./Footer";
 
 function Navbar(){
     return <>
     <header>
             <nav>
+            <button className="menu-toggle">Menu</button>
                 <ul>
-                    <li><Link to="/">Accueil</Link></li>
-                    <li><Link to="/skills">Compétences</Link></li>
-                    <li><Link to="/projects">Projets</Link></li>
+                    <li><NavLink to="/">Accueil</NavLink></li>
+                    <li><NavLink to="/skills">Compétences</NavLink></li>
+                    <li><NavLink to="/projects">Projets</NavLink></li>
                     <li><a href="#">Mon CV</a></li>
                 </ul>
             </nav>
