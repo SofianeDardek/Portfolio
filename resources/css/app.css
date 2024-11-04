@@ -26,6 +26,20 @@ li {
  }
 /* NavBar */
 
+.active {
+    color: #4CAF0D;
+}
+
+.menu-toggle {
+    display: none; /* Cacher par défaut */
+    background-color: #4CAF0D;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 header {
     background-color: black;
     display: flex;
@@ -201,16 +215,24 @@ hr {
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    text-align: center;
 }
 
 .project-image {
     width: 100%;
-    height: 180px; /* Ajuste cette hauteur en fonction de tes images */
+    height: 180px;
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 15px;
 }
+
+.project-image-detail {
+    width: 400px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
 
 .project-card h2 {
     color: #4CAF0D;
@@ -237,6 +259,65 @@ hr {
 .project-link:hover {
     background-color: #4CAF0D;
     color: white;
+}
+
+.project-details h1 {
+    color : #4CAF0D;
+}
+
+.project-details {
+    color: white;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.flex-container-project {
+    display: flex;
+    gap: 20px; 
+}
+
+.flex-container-project p {
+    margin: 0;
+}
+
+.images-container {
+   
+}
+
+.project-description {
+    flex: 2; 
+    color: #CCCCCC; 
+    line-height: 1.6;
+    
+}
+
+.languages-container {
+    margin-top: 20px; 
+    color: white; 
+}
+
+.languages-container h2 {
+    color: #4CAF0D; 
+    margin-bottom: 10px; 
+}
+
+.languages-container ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+}
+
+.video-container {
+    margin-top: 20px;
+}
+
+.video-container h2 {
+    color: #4CAF0D;
+}
+
+.video-container video {
+    max-width: 100%; 
+    border-radius: 5px; 
 }
 
 /*  Contact */
@@ -342,6 +423,28 @@ hr {
 
     .project-card {
         flex: 1 1 calc(100% - 20px); /* 1 colonne sur mobiles */
+    }
+
+    header {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    header nav li {
+        margin: 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    .menu-toggle {
+        /* display: block; */
+    }
+
+    .flex-container-project {
+        flex-direction: column;
     }
 }
 
