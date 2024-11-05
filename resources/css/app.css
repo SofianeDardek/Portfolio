@@ -5,6 +5,13 @@ body {
     padding: 0;
 }
 
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Permet de pousser le footer en bas quand il n'y a pas de contenu */
+}
+
 li {
     list-style: none;
 }
@@ -80,6 +87,7 @@ header nav ul {
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
+    flex: 1;
 }
 
 /* Titre de page */
