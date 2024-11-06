@@ -11,7 +11,7 @@ function Navbar(){
                         <li><NavLink to="/">Accueil</NavLink></li>
                         <li><NavLink to="/skills">Compétences</NavLink></li>
                         <li><NavLink to="/projects">Projets</NavLink></li>
-                        <li><a href="#">Mon CV</a></li>
+                        <li><a href="/cv/cv_sofiane_dardek.pdf" target="_bank">Mon CV</a></li>
                     </ul>
                 </nav>
                     <Link to="/contact" className="button-contact">Contact</Link>
