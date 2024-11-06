@@ -16,7 +16,7 @@ function Projects() {
         },
         {
             id: 3,
-            title: "Site web pour un centre social",
+            title: "Projet Centre social",
             img: "/images/projects/school/cs-laruche.png"
         }
     ]
@@ -24,8 +24,8 @@ function Projects() {
     return (
         <>
             <div className="content-projects">
-                <h1 className="title-page">Mes Projets</h1>
-                <hr />
+                <h1 className="title-page">Projets</h1>
+                <hr className="separator" />
                 <div className="projects-container">
                     { projects.map((el) => {
                     return (
