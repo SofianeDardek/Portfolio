@@ -3,7 +3,7 @@ function Home(){
     return <>
     <div className="content-home">
         <h1 className="title-page">Accueil</h1>
-        <hr />
+        <hr className="separator" />
         <div className="img-content">
             <div className="flex-imgProfile-socials">
             <img id="img-profile" src="/images/profile.jpg" />
