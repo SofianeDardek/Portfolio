@@ -35,7 +35,7 @@ function Contact() {
             if (response.ok) {
                 // Si la soumission est réussie
                 const data = await response.json();
-                setSuccessMessage("Votre message a été envoyé avec succès !");
+                setSuccessMessage("Message envoyé.");
                 setErrors({});
                 form.reset();
             } else {
@@ -66,7 +66,7 @@ function Contact() {
     <div className="box-contact">
         <h1>Contact</h1>
         {successMessage && (
-            <p>{successMessage}</p>
+            <p className="sucess-message">{successMessage}</p>
         )}
         <form onSubmit={handleSubmit} className="form-contact">
 
