@@ -33,7 +33,7 @@ function Skills() {
         <>
             <div className="content-skills">
                 <h1 className="title-page">Compétences</h1>
-                <hr />
+                <hr className="separator" />
                 <div className="skills-container">
                {  loading ? (
                 <p style={{color:"white"}}>chargement...</p>
