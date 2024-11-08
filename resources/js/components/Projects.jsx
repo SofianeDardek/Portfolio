@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function Projects() {
+
+    useEffect(() => {
+        document.title = "Projets de Sofiane Dardek - Développeur Web | Portfolio";
+    }, []);
 
     // Création d'un tableau "projects" qui regroupe les projets sous forme d'objets
     const projects = [
@@ -29,7 +34,7 @@ function Projects() {
                 <div className="projects-container">
                     { projects.map((el) => {
                     return (
-                    <div className="project-card">
+                    <div key={el.id} className="project-card">
                         <img src={el.img} alt="Aperçu du projet 1" className="project-image"/>
                         <h2>{ el.title }</h2>
                         <Link to={`/projects/${el.id}`} className="project-link">Voir le projet</Link>
