@@ -28,6 +28,9 @@ function Skills() {
         };
 
         fetchSkills();
+
+         // Modifier le titre de la page
+         document.title = "Compétences de Sofiane Dardek - Développeur Web | Portfolio";
     }, []);
     return (
         <>

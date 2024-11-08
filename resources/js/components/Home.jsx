@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 function Home(){
+
+    useEffect(() => {
+        document.title = "Sofiane Dardek - Développeur Web Passionné | Portfolio";
+    }, []);
 
     return <>
     <div className="content-home">

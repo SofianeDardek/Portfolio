@@ -1,11 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Contact() {
 
     const [errors, setErrors] = useState({});
     const [successMessage, setSuccessMessage] = useState("")
-    console.log(successMessage);
+    //console.log(successMessage);
     // console.log("Voici les erreurs : " + JSON.stringify(errors));
+
+    useEffect(() => {
+        document.title = "Contacter Sofiane Dardek - Développeur Web | Portfolio";
+    }, []);
 
     const handleSubmit = async (e) => {
 
