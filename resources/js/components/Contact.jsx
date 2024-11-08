@@ -75,7 +75,7 @@ function Contact() {
         <form onSubmit={handleSubmit} className="form-contact">
 
             {errors.name && errors.name.map((error, index) => (
-                <p key={index} className="error-message">Erreur : {error}</p>
+                <p key={index} className="error-message">{error}</p>
             ))}
             <label htmlFor="name">Nom :</label>
             <input name="name" type="text" />
