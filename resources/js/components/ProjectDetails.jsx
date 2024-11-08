@@ -1,8 +1,15 @@
+import { useEffect } from "react";
 import { useParams } from "react-router-dom"
 
 function ProjectDetails(){
+
     const {id} = useParams();
     const projectId = parseInt(id);
+
+    useEffect(() => {
+          document.title = "Projets de Sofiane Dardek - Développeur Web | Portfolio";
+      }, []);
+
 
 // On stocke temporairement les données dans un tableau.
 // Plus tard, elles seront enregistrées en base de données pour plus de modularité.
