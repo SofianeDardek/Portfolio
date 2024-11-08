@@ -42,7 +42,7 @@ function Skills() {
                 <p style={{color:"white"}}>chargement...</p>
                ) : (
                     skills.map(skill => (
-                    <div className="skill">
+                    <div key={skill.id} className="skill">
                         <h2>{skill.name}</h2>
                         <p>{skill.description}</p>
                     </div>
