@@ -4,6 +4,7 @@ function Contact() {
 
     const [errors, setErrors] = useState({});
     const [successMessage, setSuccessMessage] = useState("")
+    const [nbCharacter, setNbCharacter] = useState(0);
     //console.log(successMessage);
     // console.log("Voici les erreurs : " + JSON.stringify(errors));
 
@@ -64,6 +65,12 @@ function Contact() {
         }
     };
 
+    function handleChange(e)
+    {
+        let nbChar = e.target.value.length;
+        setNbCharacter(nbChar);
+    }
+
         // alert(name + " " + email + " " + message);
 
     return <>
@@ -89,8 +96,12 @@ function Contact() {
             {errors.message && errors.message.map((error, index) => (
                 <p key={index} className="error-message">{error}</p>
             ))}
-            <label htmlFor="message">Message :</label>
-            <textarea name="message" id=""></textarea>
+
+            <div className="message-container">
+                <label htmlFor="message">Message :</label>
+                <textarea name="message" onChange={handleChange}></textarea>
+                <p className={`nb-char ${nbCharacter > 2000 ? 'exceeded' : ''}`}>{nbCharacter}/2000</p>
+            </div>
 
             <button type="submit" className="button-submit">Envoyer</button>
         </form>
