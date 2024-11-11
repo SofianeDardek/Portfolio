@@ -14,10 +14,10 @@ function Home(){
             <div className="flex-imgProfile-socials">
             <img id="img-profile" src="/images/profile.jpg" />
                 <div className="social-links">
-                    <a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/sofiane-dardek-029348212/" target="_blank" rel="noopener noreferrer">
                         <img src="/images/socials/linkedin.svg" alt="LinkedIn" className="social-icon" />
                     </a>
-                    <a href="https://github.com/ton-profil" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/SofianeDardek" target="_blank" rel="noopener noreferrer">
                         <img src="/images/socials/github.svg" alt="GitHub" className="social-icon" />
                     </a>
                 </div>
