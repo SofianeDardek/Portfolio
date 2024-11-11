@@ -574,6 +574,12 @@ header nav ul {
     }
 }
 
+@media (max-width : 460px) {
+    .project-image-detail {
+        width: 100%;
+    }
+}
+
 @media (max-width: 1024px) {
     .skill {
         flex: 1 1 calc(45% - 20px); /* 2 colonnes sur tablettes */
