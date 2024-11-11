@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import ProjectDetails from './components/ProjectDetails';
+import NotFound from './components/NotFound';
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,11 @@ const router = createBrowserRouter([
       {
         path : "contact",
         element : <Contact />
-      }      
+      },
+      {
+        path : "*",
+        element : <NotFound />
+      }       
     ]
   }
 
